@@ -40,6 +40,7 @@ const Page = () => {
     /** 创建线条 */
     const createLine = useCallback(() => {
         const lineMater = new THREE.LineBasicMaterial({ vertexColors: true })
+        // Updating THREE.Geometry to THREE.BufferGeometry
         // https://sbcode.net/threejs/geometry-to-buffergeometry/
         const points = []
           for(let i = 0; i < 8000; i ++) {
